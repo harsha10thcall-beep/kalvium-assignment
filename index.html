@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1e8">
+  <title>Fieldnote — Find your next image</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#" aria-label="Fieldnote home">
+      <span class="wordmark-mark" aria-hidden="true">F.</span>
+      <span>fieldnote</span>
+    </a>
+    <span class="header-note">A little visual research</span>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> YOUR OPEN TAB FOR INSPIRATION</p>
+      <h1 id="page-title">The world is<br>full of <em>good things.</em></h1>
+      <p class="intro-copy">Find the image that gets your idea moving. Start with a place, a feeling, or something you can't stop thinking about.</p>
+    </section>
+
+    <section class="search-panel" aria-label="Image search">
+      <form class="search-form">
+        <label for="search-input">What are you looking for?</label>
+        <div class="search-row">
+          <div class="input-wrap">
+            <span class="search-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                <path d="m16 16 4.2 4.2"></path>
+              </svg>
+            </span>
+            <input id="search-input" name="query" type="search" placeholder="Try “quiet mornings” or “coastal roads”">
+          </div>
+          <button id="search-button" type="button">Search <span aria-hidden="true">↗</span></button>
+        </div>
+      </form>
+
+      <div class="quick-picks" aria-label="Suggested topics">
+        <span class="quick-picks-label">A few places to start</span>
+        <div class="chip-list">
+          <button class="chip" type="button">Botanical</button>
+          <button class="chip" type="button">Slow living</button>
+          <button class="chip" type="button">Open road</button>
+          <button class="chip" type="button">Soft light</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section" aria-label="Search results">
+      <div class="results-heading">
+        <p id="results-count">Your collection <span>·</span> results will appear here</p>
+        <span class="results-index">01 — 00</span>
+      </div>
+      <div id="results" class="results-grid" aria-live="polite"></div>
+      <div class="empty-state">
+        <span class="empty-state-mark" aria-hidden="true">✳</span>
+        <p class="empty-state-title">A fresh page</p>
+        <p class="empty-state-copy">Search for something above and your finds will gather here.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>FIELDNOTE — A VISUAL FIELD GUIDE</span>
+    <span>Made for curious minds <span aria-hidden="true">✳</span></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
