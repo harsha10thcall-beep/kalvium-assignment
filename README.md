@@ -1,3 +1,11 @@
 # Fieldnote
 
-Fieldnote will help you find images that spark ideas, starting with a topic, place, or feeling. The search interface is intentionally a quiet, editorial page with an open results area ready for image cards. I chose a warm paper-and-terracotta palette to make the app feel like a visual notebook rather than a generic search page. I added quick-pick topic chips so visitors have a few easy starting points, plus a clear empty state that explains what to do before any results exist.
+Fieldnote helps you find Wikimedia Commons images that spark ideas, starting with a topic, place, or feeling. Search results include a live loading state, a clear no-results message, and a friendly error message if the request fails.
+
+## Run locally
+
+Open `index.html` in a browser. The search uses the Wikimedia Commons API and requires an internet connection.
+
+## Deploy
+
+The GitHub Actions workflow in `.github/workflows/deploy-pages.yml` deploys the static site to GitHub Pages whenever changes reach `main`. In the repository's **Settings → Pages**, set the build and deployment source to **GitHub Actions**. The live URL will be `https://harsha10thcall-beep.github.io/kalvium-assignment/`.
