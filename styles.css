@@ -217,6 +217,11 @@ h1 em {
   background: var(--accent-dark);
 }
 
+#search-button:disabled {
+  cursor: wait;
+  opacity: 0.75;
+}
+
 #search-button span {
   font-size: 17px;
 }
@@ -325,6 +330,16 @@ h1 em {
   text-align: center;
 }
 
+.empty-state.is-loading .empty-state-mark {
+  animation: loading-spin 1.2s linear infinite;
+}
+
+@keyframes loading-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .empty-state-mark {
   display: grid;
   width: 38px;
@@ -427,5 +442,7 @@ h1 em {
   *::after {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }
